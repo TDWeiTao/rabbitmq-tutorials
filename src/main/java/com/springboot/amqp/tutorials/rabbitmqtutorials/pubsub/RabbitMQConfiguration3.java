@@ -8,12 +8,11 @@ import org.springframework.context.annotation.Profile;
 @Profile({"pub-sub"})
 @Configuration
 public class RabbitMQConfiguration3 {
-    //声明一个faount类型的交换机
+    //声明一个fanout类型的交换机
     @Bean
     public FanoutExchange fanout() {
         return new FanoutExchange("tut.fanout");
     }
-
 
     //声明一个队列，名称为autoDeleteQueue1
     @Bean(name = "autoDeleteQueue1")

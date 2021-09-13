@@ -31,8 +31,8 @@ public class ConfirmReceiver {
             } else {
                 // 业务处理失败后调用
                 System.out.println("[C] nack or reject the message:" + message);
-                channel.basicNack(deliveryTag, false, true);
-//                channel.basicReject(deliveryTag, true);
+//                channel.basicNack(deliveryTag, false, true);
+                channel.basicReject(deliveryTag, true);
             }
         } catch (IOException e) {
             e.printStackTrace();

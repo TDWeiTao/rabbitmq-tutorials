@@ -14,7 +14,7 @@ public class RoutingSender {
     @Autowired
     private DirectExchange direct;
 
-    private final String[] keys = {"orange", "black", "green","white"};
+    private final String[] keys = {"orange", "black", "green"};
 
     public void send() {
         for (int i = 0; i < 10; i++) {

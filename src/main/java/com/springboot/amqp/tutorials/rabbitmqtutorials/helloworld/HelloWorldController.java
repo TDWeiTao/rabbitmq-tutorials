@@ -1,11 +1,11 @@
 package com.springboot.amqp.tutorials.rabbitmqtutorials.helloworld;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.autoconfigure.condition.ConditionalOnBean;
+import org.springframework.context.annotation.Profile;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-@ConditionalOnBean(HelloWorldSender.class)
+@Profile({"hello-world"})
 @RestController
 public class HelloWorldController {
 

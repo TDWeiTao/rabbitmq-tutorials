@@ -41,7 +41,4 @@ public class RabbitMQConfiguration6 {
     public TutServer server() {
         return new TutServer();
     }
-
-
-
 }

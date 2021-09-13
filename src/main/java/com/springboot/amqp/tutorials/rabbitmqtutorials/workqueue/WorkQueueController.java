@@ -1,12 +1,12 @@
 package com.springboot.amqp.tutorials.rabbitmqtutorials.workqueue;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.autoconfigure.condition.ConditionalOnBean;
+import org.springframework.context.annotation.Profile;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 
-@ConditionalOnBean(WorkQueueSender.class)
+@Profile({"work-queue"})
 @RestController
 public class WorkQueueController {
     @Autowired

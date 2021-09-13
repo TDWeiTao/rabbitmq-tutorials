@@ -12,7 +12,7 @@ public class TopicsSender {
     private TopicExchange topic;
 
     private final String[] keys = {"quick.orange.rabbit", "lazy.orange.elephant", "quick.orange.fox",
-            "lazy.brown.fox", "lazy.pink.rabbit", "quick.brown.fox", "lazy.orange.male.rabbit","lazy..."};
+            "lazy.brown.fox", "lazy.pink.rabbit", "quick.brown.fox", "lazy.orange.male.rabbit"};
 
     public void send() {
         for (int i = 0; i < keys.length; i++) {
